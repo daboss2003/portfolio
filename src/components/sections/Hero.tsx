@@ -103,7 +103,7 @@ export function Hero() {
                         </h1>
 
                         <h2 className="font-mono text-xl md:text-2xl text-terminal-green glow-green-text mb-8!">
-                            &gt; Senior UI Developer
+                            &gt; Senior Software Developer
                         </h2>
 
                         <p className="font-mono text-terminal-text-dim max-w-2xl leading-relaxed mb-10!">
