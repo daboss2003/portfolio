@@ -54,28 +54,37 @@ export function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
+  const encode = (data: Record<string, string>) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&');
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     try {
       // Submit to Netlify Forms
-      const response = await fetch('/', {
+      await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({
+        body: encode({
           'form-name': 'contact',
-          ...formData,
-        }).toString(),
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
       });
 
-      if (response.ok) {
-        setSubmitted(true);
-        setTimeout(() => {
-          setSubmitted(false);
-          setFormData({ name: '', email: '', message: '' });
-        }, 3000);
-      }
+      // Clear form immediately
+      setFormData({ name: '', email: '', message: '' });
+      setSubmitted(true);
+
+      // Hide success message after 3 seconds
+      setTimeout(() => {
+        setSubmitted(false);
+      }, 3000);
     } catch (error) {
       console.error('Form submission error:', error);
     } finally {
