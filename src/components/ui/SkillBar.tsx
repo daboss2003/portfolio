@@ -67,7 +67,7 @@ export function StatCard({ label, value, prefix = '', delay = 0 }: StatCardProps
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay }}
       whileHover={{ scale: 1.05 }}
-      className="bg-terminal-dark/50 border border-terminal-border rounded-lg p-6! text-center
+      className="bg-terminal-dark/50 border border-terminal-border rounded-lg p-4! md:p-6! text-center
                  hover:border-terminal-green/50 hover:shadow-[0_0_20px_rgba(0,255,136,0.1)]
                  transition-all duration-300"
     >

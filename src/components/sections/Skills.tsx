@@ -13,7 +13,7 @@ export function Skills() {
       {/* Background */}
       <div className="absolute inset-0 matrix-bg" />
 
-      <div className="relative z-10 container mx-auto px-8! md:px-12!">
+      <div className="relative z-10 container mx-auto px-4! md:px-12!">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -47,7 +47,7 @@ export function Skills() {
         </div>
 
         {/* Skills Dashboard */}
-        <GlowCard className="p-8! md:p-10!" hover={false}>
+        <GlowCard className="p-4! md:p-6!" hover={false}>
           {/* Dashboard Header */}
           <div className="flex items-center justify-between mb-6! pb-4! border-b border-terminal-border">
             <div className="flex items-center gap-3">
@@ -151,7 +151,7 @@ export function Skills() {
           className="mt-16! grid md:grid-cols-3 gap-8"
         >
           {/* Cross-Platform Badge */}
-          <GlowCard className="p-8!" glowColor="cyan">
+          <GlowCard className="p-4! md:p-8!" glowColor="cyan">
             <div className="flex items-start gap-4">
               <div className="text-4xl">🌐</div>
               <div>
@@ -167,7 +167,7 @@ export function Skills() {
           </GlowCard>
 
           {/* Fintech Focus */}
-          <GlowCard className="p-8!" glowColor="green">
+          <GlowCard className="p-4! md:p-8!" glowColor="green">
             <div className="flex items-start gap-4">
               <div className="text-4xl">💰</div>
               <div>
@@ -183,7 +183,7 @@ export function Skills() {
           </GlowCard>
 
           {/* Learning AI/ML */}
-          <GlowCard className="p-8!" glowColor="purple">
+          <GlowCard className="p-4! md:p-8!" glowColor="purple">
             <div className="flex items-start gap-4">
               <div className="text-4xl">🤖</div>
               <div>

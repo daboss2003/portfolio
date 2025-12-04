@@ -24,7 +24,7 @@ export function Projects() {
       {/* Background */}
       <div className="absolute inset-0 grid-pattern opacity-20" />
 
-      <div className="relative z-10 container mx-auto px-8! md:px-12!">
+      <div className="relative z-10 container mx-auto px-4! md:px-12!">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -60,7 +60,7 @@ export function Projects() {
                 layout
               >
                 <GlowCard
-                  className="p-8! h-full cursor-pointer"
+                  className="p-4! md:p-8! h-full cursor-pointer"
                   glowColor={project.status === 'live' ? 'green' : project.status === 'in-development' ? 'amber' : 'blue'}
                   delay={0}
                 >
@@ -104,7 +104,7 @@ export function Projects() {
 
                   {/* Metrics */}
                   {project.metrics && (
-                    <div className="grid grid-cols-3 gap-4 mb-6! p-4! bg-terminal-gray/30 rounded-lg border border-terminal-border">
+                    <div className="grid grid-cols-3 gap-4 mb-6! p-2! md:p-4! bg-terminal-gray/30 rounded-lg border border-terminal-border">
                       {project.metrics.map((metric) => (
                         <div key={metric.label} className="text-center">
                           <div className="font-mono text-lg font-bold text-terminal-green">
@@ -131,7 +131,7 @@ export function Projects() {
                         <h4 className="font-mono text-xs text-terminal-text-dim uppercase mb-2!">
                           Key Features
                         </h4>
-                        <ul className="space-y-1">
+                        <ul className="space-y-1!">
                           {project.features.map((feature, i) => (
                             <li
                               key={i}

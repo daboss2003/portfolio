@@ -8,7 +8,7 @@ export function Certifications() {
       {/* Background */}
       <div className="absolute inset-0 bg-linear-to-b from-terminal-dark/50 to-terminal-black" />
 
-      <div className="relative z-10 container mx-auto px-8! md:px-12!">
+      <div className="relative z-10 container mx-auto px-4! md:px-12!">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -38,7 +38,7 @@ export function Certifications() {
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <GlowCard className="p-8! h-full relative overflow-hidden" glowColor="green">
+              <GlowCard className="p-4! md:p-8! h-full relative overflow-hidden" glowColor="green">
                 {/* Scanline Effect */}
                 <div className="absolute inset-0 opacity-10 pointer-events-none">
                   <div
@@ -94,7 +94,7 @@ export function Certifications() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <GlowCard className="p-10! max-w-3xl mx-auto" glowColor="amber">
+          <GlowCard className="p-4! md:p-8! max-w-3xl mx-auto" glowColor="amber">
             <div className="flex flex-col md:flex-row items-start gap-6">
               <div className="text-6xl">🎓</div>
               <div>

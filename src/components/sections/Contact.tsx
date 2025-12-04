@@ -88,7 +88,7 @@ export function Contact() {
       {/* Background */}
       <div className="absolute inset-0 matrix-bg" />
 
-      <div className="relative z-10 container mx-auto px-8! md:px-12!">
+      <div className="relative z-10 container mx-auto px-4! md:px-12!">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -116,7 +116,7 @@ export function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <GlowCard className="p-6!" glowColor="green">
+            <GlowCard className="p-4! md:p-6!" glowColor="green">
               {/* Terminal Header */}
               <div className="flex items-center gap-2 mb-6! pb-4! border-b border-terminal-border">
                 <div className="w-3 h-3 rounded-full bg-terminal-red" />
@@ -229,7 +229,7 @@ export function Contact() {
             className="space-y-8"
           >
             {/* Availability Status */}
-            <GlowCard className="p-8!" glowColor="green">
+            <GlowCard className="p-4! md:p-8!" glowColor="green">
               <div className="flex items-center gap-4">
                 <div className="relative">
                   <div className="w-16 h-16 rounded-full bg-terminal-green/20 flex items-center justify-center">
@@ -252,7 +252,7 @@ export function Contact() {
             </GlowCard>
 
             {/* Social Links */}
-            <GlowCard className="p-8!" glowColor="cyan">
+            <GlowCard className="p-4! md:p-8!" glowColor="cyan">
               <h3 className="font-mono text-sm text-terminal-text-dim mb-4!">
                 &gt; social_links:
               </h3>
@@ -284,7 +284,7 @@ export function Contact() {
             </GlowCard>
 
             {/* Quick Contact */}
-            <GlowCard className="p-8!" glowColor="amber">
+            <GlowCard className="p-4! md:p-8!" glowColor="amber">
               <h3 className="font-mono text-sm text-terminal-text-dim mb-4!">
                 &gt; quick_contact:
               </h3>

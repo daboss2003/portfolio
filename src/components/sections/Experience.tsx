@@ -14,7 +14,7 @@ export function Experience() {
       {/* Background */}
       <div className="absolute inset-0 bg-linear-to-b from-terminal-black via-terminal-dark/50 to-terminal-black" />
 
-      <div className="relative z-10 container mx-auto px-8! md:px-12!">
+      <div className="relative z-10 container mx-auto px-4! md:px-12!">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -65,7 +65,7 @@ export function Experience() {
 
                 {/* Content Card */}
                 <GlowCard
-                  className="p-8!"
+                  className="p-4! md:p-8!"
                   glowColor={exp.type === 'fintech' ? 'green' : exp.type === 'tech' ? 'blue' : 'amber'}
                   delay={index * 0.1}
                 >
@@ -133,7 +133,7 @@ export function Experience() {
           viewport={{ once: true }}
           className="mt-16!"
         >
-          <GlowCard className="p-8! max-w-2xl mx-auto" glowColor="amber">
+          <GlowCard className="p-4! md:p-8! max-w-2xl mx-auto" glowColor="amber">
             <div className="flex items-start gap-4">
               <div className="text-3xl">📚</div>
               <div>

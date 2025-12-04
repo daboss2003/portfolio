@@ -50,7 +50,7 @@ export function Hero() {
             <div className="absolute inset-0 grid-pattern opacity-30" />
 
             {/* Content */}
-            <div className="relative z-10 container mx-auto px-8! md:px-12! py-24!">
+            <div className="relative z-10 container mx-auto px-4! md:px-12! py-24!">
                 {/* Boot Sequence */}
                 <motion.div
                     initial={{ opacity: 1 }}
@@ -78,7 +78,7 @@ export function Hero() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                 >
                     {/* Terminal Header */}
-                    <div className="bg-terminal-dark/80 border border-terminal-border rounded-lg p-8! md:p-10! mb-12! backdrop-blur-sm max-w-4xl">
+                    <div className="bg-terminal-dark/80 border border-terminal-border rounded-lg p-4! md:p-6! mb-12! backdrop-blur-sm max-w-4xl">
                         <div className="flex items-center gap-2 mb-4!">
                             <div className="w-3 h-3 rounded-full bg-terminal-red" />
                             <div className="w-3 h-3 rounded-full bg-terminal-amber" />
@@ -115,7 +115,7 @@ export function Hero() {
                         </p>
 
                         {/* Self-Taught Badge */}
-                        <div className="bg-terminal-gray/50 border border-terminal-border rounded-lg p-5! mb-10! max-w-xl">
+                        <div className="bg-terminal-gray/50 border border-terminal-border rounded-lg p-3! md:p-5! mb-10! max-w-xl">
                             <div className="flex items-start gap-3">
                                 <span className="text-terminal-amber text-xl">⚡</span>
                                 <div>

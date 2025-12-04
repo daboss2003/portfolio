@@ -49,11 +49,11 @@ export function Navbar() {
                 animate={{ y: 0 }}
                 transition={{ duration: 0.5, delay: 1.5 }}
                 className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                        ? 'bg-terminal-dark/90 backdrop-blur-md border-b border-terminal-border'
-                        : 'bg-transparent'
+                    ? 'bg-terminal-dark/90 backdrop-blur-md border-b border-terminal-border'
+                    : 'bg-transparent'
                     }`}
             >
-                <div className="container mx-auto px-6">
+                <div className="container mx-auto px-6!">
                     <div className="flex items-center justify-between h-16">
                         {/* Logo */}
                         <motion.a
@@ -77,9 +77,9 @@ export function Navbar() {
                                     key={item.href}
                                     onClick={() => scrollToSection(item.href)}
                                     whileHover={{ y: -2 }}
-                                    className={`px-4 py-2 font-mono text-sm transition-colors ${activeSection === item.href.slice(1)
-                                            ? 'text-terminal-green'
-                                            : 'text-terminal-text-dim hover:text-terminal-text'
+                                    className={`px-4! py-2! font-mono text-sm transition-colors ${activeSection === item.href.slice(1)
+                                        ? 'text-terminal-green'
+                                        : 'text-terminal-text-dim hover:text-terminal-text'
                                         }`}
                                 >
                                     <span className="text-terminal-green text-xs">{item.num}.</span>{' '}
@@ -102,7 +102,7 @@ export function Navbar() {
                         <motion.button
                             whileTap={{ scale: 0.9 }}
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                            className="md:hidden p-2 text-terminal-green"
+                            className="md:hidden p-2! text-terminal-green"
                         >
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 {isMobileMenuOpen ? (
@@ -131,7 +131,7 @@ export function Navbar() {
                             onClick={() => setIsMobileMenuOpen(false)}
                         />
                         <motion.div
-                            className="absolute right-0 top-0 h-full w-64 bg-terminal-dark border-l border-terminal-border p-6 pt-20"
+                            className="absolute right-0 top-0 h-full w-64 bg-terminal-dark border-l border-terminal-border p-6! pt-20!"
                         >
                             <div className="flex flex-col gap-4">
                                 {navItems.map((item, index) => (
@@ -141,7 +141,7 @@ export function Navbar() {
                                         animate={{ opacity: 1, x: 0 }}
                                         transition={{ delay: index * 0.1 }}
                                         onClick={() => scrollToSection(item.href)}
-                                        className="text-left font-mono text-sm text-terminal-text-dim hover:text-terminal-green transition-colors py-2"
+                                        className="text-left font-mono text-sm text-terminal-text-dim hover:text-terminal-green transition-colors py-2!"
                                     >
                                         <span className="text-terminal-green">{item.num}.</span> {item.label}
                                     </motion.button>
@@ -152,7 +152,7 @@ export function Navbar() {
                                     initial={{ opacity: 0, x: 20 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ delay: navItems.length * 0.1 }}
-                                    className="mt-4 px-4 py-3 border border-terminal-green text-terminal-green font-mono text-sm
+                                    className="mt-4 px-4! py-3! border border-terminal-green text-terminal-green font-mono text-sm
                            rounded text-center hover:bg-terminal-green/10 transition-colors"
                                 >
                                     Resume
