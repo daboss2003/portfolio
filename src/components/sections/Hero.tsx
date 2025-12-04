@@ -102,7 +102,7 @@ export function Hero() {
                             <span className="gradient-text">Oluwafemi</span>
                         </h1>
 
-                        <h2 className="font-mono text-xl md:text-2xl text-terminal-green glow-green-text mb-8!">
+                        <h2 className="font-mono text-xl md:text-2xl text-terminal-green glow-green-text mb-8! typing max-w-fit">
                             &gt; Senior Software Developer
                         </h2>
 

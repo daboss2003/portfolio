@@ -154,7 +154,7 @@ section {
   overflow: hidden;
   border-right: 2px solid var(--color-terminal-green);
   white-space: nowrap;
-  animation: typing 3s steps(40) 1s forwards, blink-caret 0.75s step-end infinite;
+  animation: typing 3s steps(40) 1s forwards infinite alternate, blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
